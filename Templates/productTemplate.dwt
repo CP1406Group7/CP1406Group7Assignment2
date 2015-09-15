@@ -16,8 +16,8 @@
 
 <body>
 <div id="LogoContainer">
-<img src="../Images/Logo without Background.png" width="200" height="200" />
-</div>
+<a href="../index.html"><img src="../Images/Logo without Background.png" width="200" height="200" />
+</a></div>
 <div id="ContentBackground">
   <ul id="MenuBar1" class="MenuBarHorizontal">
   <li><a class="MenuBarItemSubmenu" href="#">Shop</a>

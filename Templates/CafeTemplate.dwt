@@ -14,8 +14,8 @@
 
 <body>
 <div id="LogoContainer">
-<img src="../Images/Cafe Logo without Background.png" width="200" height="200" /> </div>
-</div>
+<a href="#"><img src="../Images/Cafe Logo without Background.png" width=20% height=20% /> </div>
+</a></div>
 <div id="ContentBackground">
   <ul id="MenuBar1" class="MenuBarHorizontal">
   <li><a class="MenuBarItemSubmenu" href="#">Shop</a>
@@ -37,7 +37,7 @@
       <td><div align="center"><a href="../contactUs.html">Contact Us</a></div></td>
     </tr>
     <tr>
-      <td colspan="2"><p align="center">Phone: +65-44446677 | Email: Frias@gmail.com</a> | Address: 100, Orchard Crescent, 100000 Singapore</p></td>
+      <td colspan="2"><p align="center">Phone: +65-44446677 | Email: Frias@gmail.com | Address: 100, Orchard Crescent, 100000 Singapore</p></td>
     </tr>
   </table>
 </div>
