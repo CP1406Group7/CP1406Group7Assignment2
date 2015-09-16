@@ -21,6 +21,7 @@
 	border-right: solid 1px black;
 	border-bottom: solid 1px gray;
 	overflow: hidden;
+	background-color: #99FFFF;
 }
 
 /* This is the selector for the AccordionPanel container which houses the
@@ -53,7 +54,7 @@
  * you can safely remove those properties without affecting the functionality of the widget.
  */
 .AccordionPanelTab {
-	background-color: #CCCCCC;
+	background-color: #3399FF;
 	border-top: solid 1px black;
 	border-bottom: solid 1px gray;
 	margin: 0px;
@@ -87,7 +88,7 @@
  * from panels as the user clicks on the tabs within the Accordion.
  */
 .AccordionPanelOpen .AccordionPanelTab {
-	background-color: #EEEEEE;
+	background-color: #33CCFF;
 }
 
 /* This is an example of how to change the appearance of the panel tab as the
@@ -95,10 +96,10 @@
  * and removed from panel tab containers as the mouse enters and exits the tab container.
  */
 .AccordionPanelTabHover {
-	color: #555555;
+	background-color: #33CCFF;
 }
 .AccordionPanelOpen .AccordionPanelTabHover {
-	color: #555555;
+	background-color: #33CCFF;
 }
 
 /* This is an example of how to change the appearance of all the panel tabs when the
