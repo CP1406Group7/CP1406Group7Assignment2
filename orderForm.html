@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/contentTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/ContentTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Contact Us - Frias</title>
+<title>Order Form - Frias</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -35,42 +35,58 @@
 </div>
 <div id="ContentBackground">
 <!-- InstanceBeginEditable name="Body" -->
-<p>&nbsp;</p>
-<h1>Contact Us:</h1>
+<br />
+<h1>Order Form</h1>
 <div id="TableMargin">
-<table width="400" border="0">
+<form action="" method="get" name="Order"><table width="400" border="0">
   <tr>
-    <td>Phone</td>
-    <td>: +65-44446677</td>
+    <td>Last Name <img src="Images/cross.png" width="12" height="12" alt="X" name="LnameTick" id="LnameTick"/></td>
+    <td><label for="Last Name"></label>
+      <input name="LastName" type="text" id="LName" autofocus onKeyUp="LnameEntered(this);"/></td>
+  </tr>
+  <tr>
+    <td>First Name <img src="Images/cross.png" width="12" height="12" alt="X" name="FnameTick" id="FnameTick"/></td>
+    <td><label for="First Name"></label>
+      <input name="FirstName" type="text" id="Name" autofocus onKeyUp="FnameEntered(this);"/></td>
+  </tr>
+  <tr>
+  	<td>Phone Number</td>
+    <td><label for="Phone Number"></label>
+      <input name="Phone" type="text" size="30" id="Phone" style="color:#000000" onKeyUp="setColourBasedOnLength('Phone', 8)"/></td>
   </tr>
   <tr>
     <td>Email</td>
-    <td>: Frias@gmail.com</td>
+    <td><label for="Email"></label>
+      <input name="Email" type="text" id="Email" /></td>
   </tr>
   <tr>
-    <td>Adress</td>
-    <td>: 100, Orchard Crescent, 100000 Singapore</td>
-  </tr>
-</table>
-</div>
-<p>&nbsp;</p>
-<h1>Feedback:</h1>
-<div id="TableMargin">
-<form action="" method="post" name="Feedback" id="Feedback"><table width="400" border="0">
-  <tr>
-    <td>Name:</td>
-    <td><label for="Name"><img src="Images/cross.png" width="12" height="12" alt="X" name="nameTick" id="nameTick"/></label>
-      <input type="text" name="Name" id="Name" size= "30"autofocus onKeyUp="nameEntered(this);"/></td>
+    <td>Address</td>
+    <td><label for="Address"></label>
+      <input name="Address" type="text"/></td>
   </tr>
   <tr>
-    <td>Email:</td>
-    <td><label for="Email"><img src="Images/cross.png" width="12" height="12" alt="X" name="emailTick" id="emailTick"/></label>
-      <input type="text" name="Email" id="Email" size= "40"autofocus onKeyUp="emailEntered(this);" /></td>
+  <td>product choice (size/quantity)</td>
+  <td><textarea name="productChoice" cols="" rows=""></textarea></td>
   </tr>
   <tr>
-    <td>Comments:</td>
-    <td><label for="Comments"></label>
-      <textarea name="Comments" id="Comments" cols="45" rows="5"></textarea></td>
+    <td>Credit Card</td>
+    <td><label for="Credit Card"></label>
+      <input name="CreditCard" type="text" id="Card" style="color:#000000" onKeyUp="setColourBasedOnLength('Card', 16)" /></td>
+  </tr>
+  <tr>
+  	<td>Card Type</td>
+  	<td><select id="Card Type" name="Card Type"  required>
+    		<option class="nullvalue" selected disabled hidden value="null">Select</option>
+            <option id="Visa" value="Visa">Visa</option>
+            <option id="Master Card" value="Master Card">Master Card</option>
+            <option id="American Express" value="American Express">American Express</option>
+            <option id="Maestro" value="Maestro">Maestro</option>
+            <option id="PayPal" value="PayPal">PayPal</option>
+            </select></td>
+  <tr>
+    <td>Card Exp Date</td>
+    <td><label for="Card Exp Date"></label>
+      <input type="text" name="Card Exp Date" id="Card Exp Date" /></td>
   </tr>
   <tr>
     <td colspan="2"><input type="submit" name="Submit" id="Submit" value="Submit" />
@@ -79,8 +95,7 @@
 </table>
 </form>
 </div>
-<script src="form.js"></script>
-<p>&nbsp;</p>
+<script src="orderForm.js"></script>
 <!-- InstanceEndEditable -->
 </div>
 <div id="footerBackground">
