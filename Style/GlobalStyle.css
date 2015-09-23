@@ -10,12 +10,12 @@ html,body{
 #NavigationContainer{
 	width: 60%;
 	height: 25px;
-	margin-top: 25px;
+	margin-top: 15px;
 	margin-left: 20%;
 	margin-right:20%;
 	}
 #ContentBackground{
-	background-color: #E6C8FD;
+	background-color: #EFDAFE;
 	height: 80%;
 	width: 60%;
 	margin-top: 25px;
@@ -35,7 +35,7 @@ html,body{
 	}
 #LogoContainer{
 	margin-left:20%;
-	margin-top:25px;
+	margin-top:10px;
 	}
 #TableMargin{
 	margin-left:30px
@@ -43,7 +43,7 @@ html,body{
 #CafeSlideshow{
 	margin-left:25px;
 	margin-right:25px;
-	margin=top:25px;
+	margin-top:25px;
 	}
 #productContainer{
 	max-height:680px;
@@ -52,9 +52,17 @@ html,body{
 #productPhoto{
 	margin-top:25px;
 	margin-left:25px;
-	margin-right: 25px;
+	margin-right:25px;
 	width: 50%;
 	float: left;
+	}
+#button{
+	margin-left:85%;
+	margin-top:50px;
+	}
+#button1{
+	margin-left:80%;
+	margin-top:50px;
 	}
 h1{
 	font-family: "Comic Sans MS", cursive;
@@ -62,6 +70,10 @@ h1{
 	font-weight: bold;
 	padding-left: 15px;
 	padding-right: 25px;
+	}
+h2{
+	font-family: "Comic Sans MS", cursive;
+	font-size: 12px;
 	}
 p{
 	font-family: Tahoma, Geneva, sans-serif;
@@ -72,5 +84,5 @@ p{
  	
 .tableWidth {
 	float: right;
-	width: 50%;
+	width: 50%;	
 }

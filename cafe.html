@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "/Templates/cafeTemplate.dwt" --><!-- DW6 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "/Templates/CafeTemplate.dwt" --><!-- DW6 -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- #BeginEditable "doctitle" -->
@@ -14,23 +14,50 @@
 
 <body>
 <div id="LogoContainer">
-<img src="Images/Cafe%20Logo%20without%20Background.png" width=20% height=20% /> </div>
-</div>
-<div id="ContentBackground">
+<img src="Images/Cafe%20Logo%20without%20Background.png" width=15% height=15% /> </div>
+<div id="NavigationContainer">
   <ul id="MenuBar1" class="MenuBarHorizontal">
   <li><a class="MenuBarItemSubmenu" href="#">Shop</a>
     <ul>
       <li><a href="products.html">Products</a></li>
-      <li><a href="#">Orders and Payment</a></li>
+      <li><a href="orderForm.html">Orders and Payment</a></li>
     </ul>
   </li>
   <li><a href="cafe.html">Café</a></li>
   <li><a href="event.html">Event</a></li>
-  <li><a href="#">Services</a></li>
+  <li><a class="MenuBarItemSubmenu" href="#">Services</a>
+  <ul>
+  	<li><a href="measurementsGuide.html">Measurement Guide</a></li>
+  </li>
 </ul>
+</ul>
+</div>
+<div id="ContentBackground">
   <!-- #BeginEditable "Body" -->
   <p>&nbsp;</p>
-  <h1>COMING SOON.. 8 October 2015</h1>
+  <h1 align="center">COMING SOON.. 8 October 2015</h1>
+<script language="JavaScript">
+var i = 0;
+var photoContainer = new Array();
+
+photoContainer[0] = "Images/cafe0.jpg";
+photoContainer[1] = "Images/cafe1.jpg";
+photoContainer[2] = "Images/cafe2.jpg";
+
+function slideShow()
+{
+   document.slide.src = photoContainer[i];
+   if(i < photoContainer.length - 1) i++; 
+   else i = 0;
+   setTimeout("slideShow()",1500);
+}
+window.onload=slideShow;
+</script>
+
+    <div id="CafeSlideshow">
+    <img src="Images/cafe0.jpg" name="slide" width=100% id="slide" /> 
+    </div>
+    <div id="button"><a href="index.html"><img src="Images/home1.png" width="50px" style= ""onmouseover="this.src='Images/home2.png'" onmouseout="this.src='Images/home1.png'"/></a></div>
   <!-- #EndEditable -->
 </div>
 <div id="footerBackground">
