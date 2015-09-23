@@ -14,20 +14,25 @@
 
 <body>
 <div id="LogoContainer">
-<a href="#"><img src="../Images/Cafe Logo without Background.png" width=20% height=20% /> </div>
-</a></div>
-<div id="ContentBackground">
+<img src="../Images/Cafe Logo without Background.png" width=15% height=15% /> </div>
+<div id="NavigationContainer">
   <ul id="MenuBar1" class="MenuBarHorizontal">
   <li><a class="MenuBarItemSubmenu" href="#">Shop</a>
     <ul>
       <li><a href="../products.html">Products</a></li>
-      <li><a href="#">Orders and Payment</a></li>
+      <li><a href="../orderForm.html">Orders and Payment</a></li>
     </ul>
   </li>
   <li><a href="../cafe.html">Café</a></li>
   <li><a href="../event.html">Event</a></li>
-  <li><a href="#">Services</a></li>
+  <li><a class="MenuBarItemSubmenu" href="#">Services</a>
+  <ul>
+  	<li><a href="../measurementsGuide.html">Measurement Guide</a></li>
+  </li>
 </ul>
+</ul>
+</div>
+<div id="ContentBackground">
   <!-- TemplateBeginEditable name="Body" -->Body<!-- TemplateEndEditable -->
 </div>
 <div id="footerBackground">
